@@ -14,6 +14,9 @@ with open('input.txt', mode='r') as csv_file:
             aim += direction
         else:
             horizontal += direction
+            depth += direction*aim
+        print(horizontal, depth, aim)
 
-        print(row[0], row[1])
-print(horizontal, depth, horizontal*depth)
+    # print(row[0], row[1])
+# print(horizontal, depth, aim, )
+print(horizontal*depth)
